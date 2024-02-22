@@ -1,4 +1,5 @@
 Working Principle
+
 This app has its own local database. Users can create different accounts on one computer. It hashes the main password, and other passwords encrypting. It uses bcrypt library, and Brcrypt uses the "Blowfish algorithm" for hashing. For encryption and decryption, it uses the Fernet library, and Fernet uses the "AES algorithm". AES is a strong symmetric key encryption method.
 
 This code has 5 main files and 1 database in a directory. The first is password_manager.py. It includes login and sign-in functions. Also, it creates a user key and this key is used in almost every database function. functions.py has functions for hashing, decrypting, encrypting, adding passwords, reading passwords, etc. main_menu.py is the menu that is used for selecting what you want to do. sql_queries.py provides a connection with the database. It creates a database if it didn't exist before. It has two tables: accounts and passwords. Former incudes user datas. Latter includes passwords. title_maker.py just has a show function. It writes the title when the app starts. Also, it makes a box for important information.
